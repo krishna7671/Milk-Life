@@ -179,6 +179,9 @@ const Dashboard = () => {
             <DialogContent className="sm:max-w-md" data-testid="add-product-dialog">
               <DialogHeader>
                 <DialogTitle className="text-2xl font-bold">Add New Product</DialogTitle>
+                <DialogDescription>
+                  Fill in the details to add a new dairy product for monitoring.
+                </DialogDescription>
               </DialogHeader>
               <form onSubmit={handleAddProduct} className="space-y-4 mt-4">
                 <div>
