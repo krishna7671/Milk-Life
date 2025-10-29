@@ -206,7 +206,7 @@ const Dashboard = () => {
                     </SelectTrigger>
                     <SelectContent>
                       {productTypes.map((type) => (
-                        <SelectItem key={type.type} value={type.type}>
+                        <SelectItem key={type.type} value={type.type} data-testid={`product-type-option-${type.type}`}>
                           {type.icon} {type.type.charAt(0).toUpperCase() + type.type.slice(1)}
                         </SelectItem>
                       ))}
